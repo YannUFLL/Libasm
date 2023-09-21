@@ -1,0 +1,2 @@
+This is a test file for the read function.
+It contains multiple lines and characters for various tests.
