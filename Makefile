@@ -17,7 +17,7 @@ EXEC := test
 LIBASM := libasm
 
 # Compilation flags
-CFLAGS = -I include
+CFLAGS = -I include -Wall -Wextra -Werror 
 
 all: $(EXEC)
 

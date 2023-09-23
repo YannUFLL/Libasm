@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydumaine <ydumaine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 13:47:18 by ydumaine          #+#    #+#             */
-/*   Updated: 2023/09/21 18:57:21 by ydumaine         ###   ########.fr       */
+/*   Updated: 2023/09/23 12:11:53 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 
 int compare_files(int fd1, int fd2) {
-    const size_t BUFFER_SIZE = 1024;
+    const ssize_t BUFFER_SIZE = 1024;
     unsigned char buffer1[BUFFER_SIZE];
     unsigned char buffer2[BUFFER_SIZE];
     ssize_t bytes_read1, bytes_read2;
@@ -268,7 +268,7 @@ void test_ft_strdup()
 
 
 
-int main(int argc, char **argv)
+int main()
 {
     
     printf("FT_STRLEN\n");
