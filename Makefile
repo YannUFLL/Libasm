@@ -1,8 +1,8 @@
 # ASM source files
-ASM_SRC := $(wildcard asm/*.asm)
+ASM_SRC := $(wildcard asm/*.s)
 
 # Corresponding object files in the obj directory
-ASM_OBJ := $(patsubst asm/%.asm, obj/%.o, $(ASM_SRC))
+ASM_OBJ := $(patsubst asm/%.s, obj/%.o, $(ASM_SRC))
 
 # C source files
 C_SRC := $(wildcard *.c)
@@ -22,7 +22,7 @@ CFLAGS = -I include -Wall -Wextra -Werror
 all: $(EXEC)
 
 # Rule to compile ASM files
-obj/%.o: asm/%.asm
+obj/%.o: asm/%.s
 	nasm -f elf64 -g -F dwarf $< -o $@
 
 # Rule to create the library
