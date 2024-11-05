@@ -11,7 +11,7 @@ C_SRC := $(wildcard *.c)
 C_OBJ := $(patsubst %.c, obj/%.o, $(C_SRC))
 
 # Final executable file
-EXEC := test
+EXEC := main
 
 # Library name
 LIBASM := libasm
