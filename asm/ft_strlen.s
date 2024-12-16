@@ -1,7 +1,5 @@
 bits 64 
 
-section .data
-
 section .text 
     global ft_strlen
     ft_strlen: 
