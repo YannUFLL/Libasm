@@ -8,7 +8,7 @@ section .text
         ft_strdup: 
 
 
-        push rax
+        push rdi
         call ft_strlen
         mov rdi, rax 
         inc rdi
@@ -22,7 +22,7 @@ section .text
 
 
         error: 
-            mov rax, -1
+            mov rax, 0
             ret
         return: 
             ret
