@@ -20,4 +20,4 @@ This project, called `libasm`, is an attempt to recreate some commonly used C st
 
 #### Testing:
 
-The project includes a `test.c` that tests these functions to ensure that they are working as expected. This `main.c` is compiled alongside `libasm.a` to demonstrate the functionality.
+The project includes a `main.c` that tests these functions to ensure that they are working as expected. This `main.c` is compiled alongside `libasm.a` to demonstrate the functionality.
