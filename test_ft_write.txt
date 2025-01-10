@@ -1,3 +1,0 @@
-test file
-Error writing : Bad file descriptor
-Error writing : Bad file descriptor

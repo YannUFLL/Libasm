@@ -9,9 +9,9 @@ section .text
         cmp_loop:
             xor rax, rax
             mov al, byte [rdi]
-            mov bl, byte [rsi]
+            mov dl, byte [rsi]
 
-            cmp al, bl
+            cmp al, dl
             jg greater
             jl lower
             test al, al
@@ -22,7 +22,7 @@ section .text
             jmp cmp_loop
         
         end_string:
-            test bl, bl
+            test dl, dl
             jz equal
             jnz lower 
 
